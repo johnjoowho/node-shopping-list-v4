@@ -63,7 +63,7 @@ app.put('/shopping-list/:id', jsonParser, (req, res) => {
     }
   }
 
-  app.put('/recipes/:id', jsonParser, (req, res) => {
+app.put('/recipes/:id', jsonParser, (req, res) => {
     const requiredFields = ['name', 'ingredients'];
     for (let i=0; i<requiredFields.length; i++) {
       const field = requiredFields[i];
